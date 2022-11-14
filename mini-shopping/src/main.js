@@ -40,6 +40,33 @@ function onButtonClick(event, items) {
   displayItems(filtered);
 }
 
+/*
+// Handle button click
+function onButtonClick(event, items) {
+  const target = event.target;
+  const key = target.dataset.key;
+  const value = target.dataset.value;
+
+  if (key == null || value == null) {
+    return;
+  }
+
+  updateItems(items, key, value);
+}
+
+// Make the items matching {key: value} invisible.
+function updateItems(items, key, value) {
+  items.forEach((item) => {
+    console.log(item);
+    if (item.dataset[key] === value) {
+      item.classList.remove("invisible");
+    } else {
+      item.classList.add("invisible");
+    }
+  });
+}
+*/
+
 function setEventListeners(items) {
   const logo = document.querySelector(".logo");
   const buttons = document.querySelector(".buttons");
