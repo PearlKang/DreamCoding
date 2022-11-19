@@ -86,7 +86,7 @@ Design requirements
 
 ## 내가 알고 있는 모든 언어를 작성하기 보다, 최대한 제일 자신감 있는 언어부터 작성.
 
-### C
+### C (0~100 중 몇점인지.)
 
 ### Javascript
 
@@ -131,3 +131,39 @@ Design requirements
 # 페이스 북 등의 sns는 피하는게 좋음.
 
 # 개발 관련된 링크들을 넣어놓으면 될 듯.
+
+---
+
+# color - https://material.io/resources/color/#!/?view.left=0&view.right=0
+
+# font - https://fonts.google.com/
+
+# icon - https://fontawesome.com/icons
+
+## svg 다운로드 fill 부분에 색상 넣으면 아이콘 색상이 바뀜.
+
+### color picker 사용
+
+### svg to png 로 변경 후 사용하면 됨.
+
+# 자신만의 독특한 로고를 만들수 있는 사이트 - canva.com
+
+## logo design
+
+## or
+
+## blank > elements 에서 선택해서 색상 변경해서 선정 후 작업.
+
+## 작업 후 png로 다운로드 (배경에 흰색이 남아 있음.)
+
+## white background remover 로 배경 제거
+
+### remove.bg
+
+# > favicon.png
+
+# color 색 조합 - https://color.adobe.com/ko/create/color-wheel
+
+# canva > youtube channel art 검색 > 배경 쓰던가 아니면 다시 만들던가.
+
+## > home-background.png 만듦.
