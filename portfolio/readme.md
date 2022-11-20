@@ -160,7 +160,7 @@ Design requirements
 
 ### remove.bg
 
-# > favicon.png
+### > favicon.png
 
 # color 색 조합 - https://color.adobe.com/ko/create/color-wheel
 
