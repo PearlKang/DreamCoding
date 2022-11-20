@@ -167,3 +167,11 @@ Design requirements
 # canva > youtube channel art 검색 > 배경 쓰던가 아니면 다시 만들던가.
 
 ## > home-background.png 만듦.
+
+주석 색 변경
+
+# Setting > json 검색 > Edit in setting.json 클릭 후 아래 세팅 추가
+
+"editor.tokenColorCustomizations": {
+"comments": "#ffc2c2"
+},
