@@ -175,3 +175,45 @@ Design requirements
 "editor.tokenColorCustomizations": {
 "comments": "#ffc2c2"
 },
+
+html에서 component class이름을 작성할때, 유지보수가 힘들어서 사용하는 네이밍 규칙
+
+# BEM - Block Element Modifier
+
+<!-- # block__element--modifier -->
+
+# ex.
+
+# .card
+
+# .card--dark
+
+# .card\_\_img
+
+# .card\_\_title
+
+# .card\_\_description
+
+# .card\_\_button--pink
+
+# .card\_\_button--blue
+
+# 아래와 같이는 안써도 됨.
+
+# .cards
+
+# .cards\_\_card
+
+# .cards\_\_card\_\_title
+
+# .cards\_\_card\_\_description
+
+# >
+
+# .cards
+
+# .card
+
+# .card\_\_title
+
+# .card\_\_description
