@@ -217,3 +217,7 @@ html에서 component class이름을 작성할때, 유지보수가 힘들어서 �
 # .card\_\_title
 
 # .card\_\_description
+
+Image resizer: https://resizeimage.net/
+
+Image compressor: https://tinypng.com/
