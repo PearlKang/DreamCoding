@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 200px;
+        height: 200px;
+        background-color: mediumseagreen;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- translate 는 요소(자기자신) 사이즈의 %를 계산해서 산정됨. -->
+    <!-- 아래는 200px의 50%인 100px씩 이동 -->
+    <!-- 따라서 translate는 자기자신 사이즈의 %만큼 이동 -->
+    <!-- 그래서 가운데 정렬을 할때 50%만하면 안됨. -->
+    <!-- 따라서 translate를 사용해서 가운데 정렬을 할때는 position top left를 사용후 translate를 써야함. -->
+    <div class="box"></div>
+  </body>
+</html>
