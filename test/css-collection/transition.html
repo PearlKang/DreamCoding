@@ -14,13 +14,24 @@
         margin: 20px;
         background-color: pink;
       }
-
+      /* CSS로 좀더 동적으로 표현 가능함. */
+      /* transition을 안쓰면 너무 급작스럽게, 빠르게 변경됨. */
+      /* 그래서 Transition을 써서 좀더 스무스하게 표현할 수 있다. */
       .box1:hover {
         background-color: blueviolet;
+
+        /* 색깔을 변경할꺼라 property를 color */
+        /* transition-property: background-color; */
+        /* 얼마나 오랫동안 */
+        /* transition-duration: 300ms; */
+        /* 타임. */
+        /* transition-timing-function: linear; */
+        /* 위 3개 합치면 아래와 같이 한줄로 쓸 수 있다. */
         transition: background-color 300ms linear;
       }
 
       .box2:hover {
+        /* 50% = 동그랗게. */
         border-radius: 50%;
         background-color: cornflowerblue;
         transition: all 2s ease;
@@ -30,6 +41,7 @@
         border-radius: 50%;
         transform: translateX(400px);
         background-color: cornflowerblue;
+        /* transition: all 3s cubic-bezier(0.47, 0, 1, -0.06); */
         transition: all 3s ease;
       }
     </style>
