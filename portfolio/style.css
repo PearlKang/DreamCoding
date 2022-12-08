@@ -35,7 +35,7 @@
   box-sizing: border-box;
 }
 
-/* Typography */
+/* Typography: 쉽게 웹사이트 전반적으로 디자인한 스타일링에 대한. */
 
 h1 {
   font-size: var(--font-large);
@@ -48,19 +48,19 @@ h2 {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
   color: var(--color-black);
-  margin: 8px 0;
+  margin: 8px 0px;
 }
 
 h3 {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
   color: var(--color-black);
-  margin: 8px 0;
+  margin: 8px 0px;
 }
 
 p {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
   color: var(--color-black);
-  margin: 4px 0;
+  margin: 4px 0px;
 }
