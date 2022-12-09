@@ -31,6 +31,7 @@
 }
 
 /* Universal tags: 공통적으로 적용해야할 것들. */
+
 * {
   box-sizing: border-box;
 }
@@ -64,3 +65,5 @@ p {
   color: var(--color-black);
   margin: 4px 0px;
 }
+
+/* Navbar */
