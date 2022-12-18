@@ -457,3 +457,8 @@ p {
   color: var(--color-yellow);
   transition: all var(--animation-duration) ease-in;
 }
+
+/* For below 768px screen width */
+
+@media screen and (max-width: 786px) {
+}
