@@ -5,6 +5,6 @@ const navbarHeight = navbar.getBoundingClientRect().height;
 
 // arrow function
 document.addEventListener("scroll", () => {
-  console.log(window.screenY);
-  console.log(navbarHeight);
+  console.log(window.scrollY);
+  console.log(`navbarHeight: ${navbarHeight}`);
 });
