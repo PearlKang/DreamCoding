@@ -39,7 +39,7 @@ const home = document.querySelector("#home");
 const homeHeight = home.getBoundingClientRect().height;
 
 document.addEventListener("scroll", () => {
-  console.log(homeHeight);
+  home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
 // Utility function
