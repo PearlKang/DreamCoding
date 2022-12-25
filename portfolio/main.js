@@ -53,6 +53,11 @@ document.addEventListener("scroll", () => {
   }
 });
 
+// Handle click on the "arrow-up" button
+arrowUp.addEventListener("click", () => {
+  scrollIntoViews("#home");
+});
+
 // Utility function
 function scrollIntoViews(selector) {
   const scrollTo = document.querySelector(selector);
