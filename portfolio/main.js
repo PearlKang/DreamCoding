@@ -73,22 +73,14 @@ workBtnContainer.addEventListener("click", (e) => {
   console.log(filter);
 
   projects.forEach((project) => {
-    console.log(project);
+    console.log(project.dataset.type);
+
+    if (filter === "*" || filter === project.dataset.type) {
+      project.classList.remove("invisible");
+    } else {
+      project.classList.add("invisible");
+    }
   });
-
-  console.log(`-------------------`);
-  for (let project of projects) {
-    console.log(project);
-  }
-
-  console.log(`-------------------`);
-
-  let project;
-
-  for (let i = 0; i < projects.length; i++) {
-    project = projects[i];
-    console.log(project);
-  }
 });
 
 // Utility function
