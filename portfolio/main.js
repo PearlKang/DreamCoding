@@ -58,6 +58,17 @@ arrowUp.addEventListener("click", () => {
   scrollIntoViews("#home");
 });
 
+// Projects
+const workBtnContainer = document.querySelector(".work__categories");
+const projectContainer = document.querySelector(".work__projects");
+const projects = document.querySelectorAll(".project");
+
+workBtnContainer.addEventListener("click", (e) => {
+  const filter = e.target.dataset.filter;
+
+  console.log(filter);
+});
+
 // Utility function
 function scrollIntoViews(selector) {
   const scrollTo = document.querySelector(selector);
