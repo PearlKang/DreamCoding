@@ -489,11 +489,13 @@ p {
   color: var(--color-white);
   background-color: var(--color-pink);
   border-radius: 50%;
-  display: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease-in;
 }
 
 .arrow-up.visible {
-  display: block;
+  opacity: 1;
 }
 
 /* For below 768px screen width */
