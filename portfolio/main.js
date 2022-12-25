@@ -66,6 +66,19 @@ const projects = document.querySelectorAll(".project");
 workBtnContainer.addEventListener("click", (e) => {
   const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
 
+  if (filter == null) {
+    return;
+  }
+
+  projects.forEach((project) => {});
+
+  //   for (let project of projects) {
+  //   }
+
+  //   let project;
+
+  //   for (let i = 0; i < projects.length; i++) {}
+
   console.log(filter);
 });
 
