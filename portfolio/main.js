@@ -70,16 +70,25 @@ workBtnContainer.addEventListener("click", (e) => {
     return;
   }
 
-  projects.forEach((project) => {});
-
-  //   for (let project of projects) {
-  //   }
-
-  //   let project;
-
-  //   for (let i = 0; i < projects.length; i++) {}
-
   console.log(filter);
+
+  projects.forEach((project) => {
+    console.log(project);
+  });
+
+  console.log(`-------------------`);
+  for (let project of projects) {
+    console.log(project);
+  }
+
+  console.log(`-------------------`);
+
+  let project;
+
+  for (let i = 0; i < projects.length; i++) {
+    project = projects[i];
+    console.log(project);
+  }
 });
 
 // Utility function
