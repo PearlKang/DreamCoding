@@ -24,6 +24,8 @@ navbarMenu.addEventListener("click", (event) => {
     return;
   }
 
+  navbarMenu.classList.remove("open");
+
   scrollIntoViews(link);
 });
 
