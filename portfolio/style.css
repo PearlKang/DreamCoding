@@ -556,14 +556,20 @@ p {
 
   .about__majors {
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0px;
   }
 
   .major {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
   }
 
   .skillset {
     flex-direction: column;
+  }
+
+  .category__btn {
+    padding: 8px;
   }
 
   .project {
