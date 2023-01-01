@@ -65,6 +65,7 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+  padding: 0;
 }
 
 /* Typography: 쉽게 웹사이트 전반적으로 디자인한 스타일링에 대한. */
