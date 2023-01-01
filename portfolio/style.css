@@ -325,6 +325,7 @@ p {
   border-radius: var(--size-border-radius);
   font-size: var(--font-regular);
   padding: 8px 48px;
+  position: relative;
 }
 
 .category__btn.selected,
@@ -346,9 +347,9 @@ p {
   height: 24px;
   line-height: 24px;
   display: inline-block; /* span이라서 이래야 모양이 이쁘게 됨. */
-  position: relative;
+  position: absolute;
   top: -20px;
-  left: 4px;
+  right: 16px;
   opacity: 0;
   transition: all var(--animation-duration) ease-in;
 }
@@ -572,7 +573,8 @@ p {
   }
 
   .category__btn {
-    padding: 8px;
+    margin: 4px 0;
+    width: 100%;
   }
 
   .project {
