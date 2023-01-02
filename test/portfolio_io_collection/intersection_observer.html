@@ -44,6 +44,13 @@
     <div class="box">19</div>
     <div class="box">20</div>
 
-    <script></script>
+    <script>
+      window.addEventListener("scroll", () => {
+        const boxes = document.querySelectorAll(".box");
+        boxes.forEach((box) => {
+          const rect = box.getBoundingClientRect();
+        });
+      });
+    </script>
   </body>
 </html>
