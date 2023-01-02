@@ -46,10 +46,11 @@
 
     <script>
       const boxes = document.querySelectorAll(".box");
+      const rects = boxes.forEach((box) => {
+        const rect = box.getBoundingClientRect();
+      });
       window.addEventListener("scroll", () => {
-        boxes.forEach((box) => {
-          const rect = box.getBoundingClientRect();
-        });
+        rects.forEach((rect) => {});
       });
     </script>
   </body>
