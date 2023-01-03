@@ -46,14 +46,7 @@
 
     <script>
       const boxes = document.querySelectorAll(".box");
-      window.addEventListener("resize", () => {
-        const rects = boxes.forEach((box) => {
-          const rect = box.getBoundingClientRect();
-        });
-      });
-      window.addEventListener("scroll", () => {
-        rects.forEach((rect) => {});
-      });
+      console.log(boxes);
     </script>
   </body>
 </html>
