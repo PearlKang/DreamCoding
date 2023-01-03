@@ -48,7 +48,11 @@
       const boxes = document.querySelectorAll(".box");
       const callback = (entries, observer) => {
         entries.forEach((entry) => {
-          console.log(entry.target);
+          if (entry.isIntersecting) {
+            console.log(entry.target);
+          } else {
+            console.error(entry.target);
+          }
         });
       };
       const observer = new IntersectionObserver(callback);
