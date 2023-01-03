@@ -49,6 +49,7 @@
       const observer = new IntersectionObserver((entries, observer) => {
         console.log("observe!");
       });
+      boxes.forEach((box) => observer.observe(box));
     </script>
   </body>
 </html>
