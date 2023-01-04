@@ -55,7 +55,12 @@
           }
         });
       };
-      const observer = new IntersectionObserver(callback);
+      const options = {
+        root: null, //viewport
+        rootMargin: "0px", //viewport 밖에서 부터 계산(추가)되는.
+        threshold: 1, //0 ~ 1 (100%), 얼마만큼 보여져야(isIntersecting) Callback함수를 호출할지, 나갈때는 반대.
+      };
+      const observer = new IntersectionObserver(callback, options);
 
       boxes.forEach((box) => observer.observe(box));
     </script>
