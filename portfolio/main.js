@@ -125,7 +125,15 @@ const navItems = sectionIds.map((id) =>
   document.querySelector(`[data-link="${id}"]`)
 );
 
+let selectedNavIndex = 0;
 let selectedNavItem = navItems[0];
+
+function selectNavItem(selected) {
+  selectedNavItem.classList.remove("active");
+  selectedNavItem = navItems[selected];
+  selectedNavItem.classList.add("active");
+}
+
 const observerOptions = {
   root: null,
   rootMargin: "0px",
@@ -134,21 +142,18 @@ const observerOptions = {
 
 const observerCallback = (entries, observer) => {
   entries.forEach((entry) => {
-    if (!entry.isIntersecting) {
+    if (!entry.isIntersecting && entry.intersectionRatio > 0) {
       const index = sectionIds.indexOf(`#${entry.target.id}`);
-      let selectedIndex;
 
       // 스크롤링이 아래로 되어서 페이지가 올라옴
       if (entry.boundingClientRect.y < 0) {
-        selectedIndex = index + 1;
+        selectedNavIndex = index + 1;
       } else {
-        selectedIndex = index - 1;
+        selectedNavIndex = index - 1;
       }
-
-      selectedNavItem.classList.remove("active");
-      selectedNavItem = navItems[selectedIndex];
-      selectedNavItem.classList.add("active");
     }
+
+    selectNavItem(selectedNavIndex);
   });
 };
 
