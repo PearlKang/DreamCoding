@@ -134,7 +134,10 @@ const observerOptions = {
 
 const observerCallback = (entries, observer) => {
   entries.forEach((entry) => {
-    console.log(entry.target);
+    if (!entry.isIntersecting) {
+      const index = sectionIds.indexOf(`#${entry.target.id}`);
+      console.log(index, entry.target.id);
+    }
   });
 };
 
