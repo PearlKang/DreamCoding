@@ -131,7 +131,7 @@ let selectedNavItem = navItems[0];
 
 function selectNavItem(selected) {
   selectedNavItem.classList.remove("active");
-  selectedNavItem = navItems[selected];
+  selectedNavItem = selected;
   selectedNavItem.classList.add("active");
 }
 
@@ -153,8 +153,6 @@ const observerCallback = (entries, observer) => {
         selectedNavIndex = index - 1;
       }
     }
-
-    selectNavItem(selectedNavIndex);
   });
 };
 
