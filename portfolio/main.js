@@ -164,7 +164,7 @@ window.addEventListener("wheel", () => {
   if (window.scrollY === 0) {
     selectedNavIndex = 0;
   } else if (
-    window.scrollY + window.innerHeight ===
+    Math.round(window.scrollY + window.innerHeight) >=
     document.body.clientHeight
   ) {
     selectedNavIndex = navItems.length - 1;
