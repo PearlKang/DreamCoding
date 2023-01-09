@@ -27,6 +27,7 @@ navbarMenu.addEventListener("click", (event) => {
   navbarMenu.classList.remove("open");
 
   scrollIntoViews(link);
+  selectNavItem(target);
 });
 
 // Navbar toggle button for small screen
@@ -161,7 +162,7 @@ const observer = new IntersectionObserver(observerCallback, observerOptions);
 
 sections.forEach((section) => observer.observe(section));
 
-window.addEventListener("scroll", () => {
+window.addEventListener("wheel", () => {
   if (window.scrollY === 0) {
     selectedNavIndex = 0;
   } else if (
